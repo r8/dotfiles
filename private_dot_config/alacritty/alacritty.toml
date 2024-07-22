@@ -1,0 +1,56 @@
+live_config_reload = true
+
+[env]
+TERM = "xterm-256color"
+LC_CTYPE = "en_US.UTF-8"
+
+[window]
+dynamic_padding = true
+
+[window.padding]
+x = 4
+y = 4
+
+[font]
+size = 16.0
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Bold"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Bold Italic"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Regular"
+
+# XTerm 256
+[colors.primary]
+background = '#000000'
+foreground = '#ffffff'
+
+[colors.normal]
+black = '#000000'
+red = '#cd0000'
+green = '#00cd00'
+yellow = '#cdcd00'
+blue = '#0000ee'
+magenta = '#cd00cd'
+cyan = '#00cdcd'
+white = '#c0c0c0'
+
+[colors.bright]
+black = '#7f7f7f'
+red = '#ff0000'
+green = '#00ff00'
+yellow = '#ffff00'
+blue = '#5c5cff'
+magenta = '#ff00ff'
+cyan = '#00ffff'
+white = '#ffffff'
