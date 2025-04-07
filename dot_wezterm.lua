@@ -12,7 +12,7 @@ end
 
 -- This is where you actually apply your config choices
 
-config.font = wezterm.font 'JetBrains Mono'
+config.font = wezterm.font 'JetBrainsMono Nerd Font'
 config.font_size = 16.0
 
 config.color_scheme = 'Builtin Dark'
