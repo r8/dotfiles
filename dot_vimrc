@@ -1,0 +1,13 @@
+" Use Vim settings instead of Vi
+set nocompatible
+
+" Lines
+set number                     " Show current line number
+set relativenumber             " Show relative line numbers
+set cursorline                 " Highlight current line
+
+call plug#begin()
+
+Plug 'vim-airline/vim-airline'
+
+call plug#end()
