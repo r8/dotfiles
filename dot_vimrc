@@ -3,11 +3,25 @@ call plug#begin()
 
 Plug 'dracula/vim', { 'as': 'dracula' }
 Plug 'vim-airline/vim-airline'
+Plug 'liuchengxu/vim-which-key'
+Plug 'mhinz/vim-startify'
+
+Plug 'preservim/nerdtree' |
+            \ Plug 'Xuyuanp/nerdtree-git-plugin'
+
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+
+Plug 'farmergreg/vim-lastplace'
+Plug 'sheerun/vim-polyglot'
 
 call plug#end()
 
 " Use Vim settings instead of Vi
 set nocompatible
+
+" Font
+set encoding=UTF-8
 
 " Lines
 set number                     " Show current line number
@@ -18,3 +32,13 @@ set cursorline                 " Highlight current line
 syntax enable
 colorscheme dracula
 
+" Tabs
+let g:airline#extensions#tabline#enabled = 1
+
+" Key bindings
+let g:mapleader = "\<Space>"
+let g:maplocalleader = ','
+nnoremap <silent> <leader>      :<c-u>WhichKey '<Space>'<CR>
+nnoremap <silent> <localleader> :<c-u>WhichKey  ','<CR>
+
+nnoremap <leader>n :NERDTreeFocus<CR>
