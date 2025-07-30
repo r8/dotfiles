@@ -1,3 +1,11 @@
+" Plugins
+call plug#begin()
+
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'vim-airline/vim-airline'
+
+call plug#end()
+
 " Use Vim settings instead of Vi
 set nocompatible
 
@@ -6,8 +14,7 @@ set number                     " Show current line number
 set relativenumber             " Show relative line numbers
 set cursorline                 " Highlight current line
 
-call plug#begin()
+" Colors
+syntax enable
+colorscheme dracula
 
-Plug 'vim-airline/vim-airline'
-
-call plug#end()
