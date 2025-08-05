@@ -1,8 +1,8 @@
 [user]
-  name = Sergey Storchay
-  email = r8@r8.com.ua
+    name = Sergey Storchay
+    email = r8@r8.com.ua
 [core]
-  excludesFile = ~/.gitignore
-  autocrlf = input
+    excludesFile = ~/.gitignore
+    autocrlf = input
 [init]
-  defaultBranch = main
+    defaultBranch = main
