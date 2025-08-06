@@ -1,20 +1,18 @@
 " Plugins
 call plug#begin()
+  Plug 'dracula/vim', { 'as': 'dracula' }
+  Plug 'vim-airline/vim-airline'
+  Plug 'liuchengxu/vim-which-key'
+  Plug 'mhinz/vim-startify'
 
-Plug 'dracula/vim', { 'as': 'dracula' }
-Plug 'vim-airline/vim-airline'
-Plug 'liuchengxu/vim-which-key'
-Plug 'mhinz/vim-startify'
+  Plug 'preservim/nerdtree' |
+				\ Plug 'Xuyuanp/nerdtree-git-plugin'
 
-Plug 'preservim/nerdtree' |
-            \ Plug 'Xuyuanp/nerdtree-git-plugin'
+  Plug 'tpope/vim-fugitive'
+  Plug 'airblade/vim-gitgutter'
 
-Plug 'tpope/vim-fugitive'
-Plug 'airblade/vim-gitgutter'
-
-Plug 'farmergreg/vim-lastplace'
-Plug 'sheerun/vim-polyglot'
-
+  Plug 'farmergreg/vim-lastplace'
+  Plug 'sheerun/vim-polyglot'
 call plug#end()
 
 " Use Vim settings instead of Vi
