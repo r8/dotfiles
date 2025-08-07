@@ -1,5 +1,6 @@
 {{ if ne .chezmoi.os "darwin" }}
 .config/borders
+.config/karabiner/karabiner.json
 {{ end }}
 
 # Ignore WezTerm config on OpenBSD
