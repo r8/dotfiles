@@ -1,8 +1,18 @@
+# Ignore desktop only configs on servers
+{{ if ne .hostType "desktop" }}
+.local/share/wallpapers
+.wezterm.lua
+.config/alacritty
+{{ end }}
+
+
+# Ignore MacOS only configs on other systems
 {{ if ne .chezmoi.os "darwin" }}
 .config/borders
 .config/karabiner
 {{ end }}
 
+# Manage .xsession only on OpenBSD
 {{ if not (and (eq .chezmoi.os "openbsd") (eq .hostType "desktop")) }}
 .xsession
 {{ end }}
