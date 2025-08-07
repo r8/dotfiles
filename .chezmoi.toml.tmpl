@@ -1,0 +1,4 @@
+{{- $hostTypeChoices := list "server" "desktop" -}}
+{{- $hostType := promptChoiceOnce . "hostType" "What type of host are you on" $hostTypeChoices  -}}
+[data]
+    hostType = {{- $hostType | toToml -}}
