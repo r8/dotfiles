@@ -31,6 +31,9 @@ set cursorline                 " Highlight current line
 syntax enable
 colorscheme dracula
 
+" Buffers
+set hidden
+
 " Tabs
 let g:airline#extensions#tabline#enabled = 1
 
