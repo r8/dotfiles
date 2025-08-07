@@ -3,6 +3,10 @@
 .config/karabiner/karabiner.json
 {{ end }}
 
+{{ if (or (eq .chezmoi.os "darwin") (ne .hostType "desktop")) }}
+.xsession
+{{ end }}
+
 # Ignore WezTerm config on OpenBSD
 {{ if eq .chezmoi.os "openbsd" }}
 .wezterm.lua
