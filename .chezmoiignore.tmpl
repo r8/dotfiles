@@ -3,7 +3,7 @@
 .config/karabiner/karabiner.json
 {{ end }}
 
-{{ if (or (eq .chezmoi.os "darwin") (ne .hostType "desktop")) }}
+{{ if not (and (eq .chezmoi.os "openbsd") (eq .hostType "desktop")) }}
 .xsession
 {{ end }}
 
