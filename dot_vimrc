@@ -12,6 +12,7 @@ call plug#begin()
   Plug 'tpope/vim-fugitive'
   Plug 'airblade/vim-gitgutter'
 
+  Plug 'jiangmiao/auto-pairs'
   Plug 'farmergreg/vim-lastplace'
   Plug 'sheerun/vim-polyglot'
 call plug#end()
