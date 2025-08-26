@@ -1,3 +1,3 @@
 #!/bin/sh
 
-vim +PlugUpdate +qa
+vim +PlugInstall +PlugUpdate +qa
