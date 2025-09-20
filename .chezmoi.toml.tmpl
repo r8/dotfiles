@@ -1,4 +1,8 @@
 {{- $hostTypeChoices := list "server" "desktop" -}}
-{{- $hostType := promptChoiceOnce . "hostType" "What type of host are you on" $hostTypeChoices  -}}
+{{- $hostType := promptChoiceOnce . "hostType" "What type of host are you on" $hostTypeChoices -}}
+{{- $screenResolutionChoices := list "small" "medium" "large" -}}
+{{- $screenResolution := promptChoiceOnce . "screenResolution" "What is your screen resolution" $screenResolutionChoices -}}
 [data]
-    hostType = {{- $hostType | toToml -}}
+    hostType = {{ $hostType | toToml }}
+    screenResolution = {{ $screenResolution | toToml }}
+
