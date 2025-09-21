@@ -13,9 +13,11 @@ end
 -- This is where you actually apply your config choices
 
 config.font = wezterm.font 'JetBrainsMono Nerd Font'
-{{ if eq .screenResolution "medium" }}
+{{- if eq .screenResolution "medium" }}
 config.font_size = 16.0
-{{ end }}
+{{ else if eq .screenResolution "large" }}
+config.font_size = 14.0
+{{- end }}
 
 config.color_scheme = 'Builtin Dark'
 

@@ -4,5 +4,8 @@
 {{- $screenResolution := promptChoiceOnce . "screenResolution" "What is your screen resolution" $screenResolutionChoices -}}
 [data]
     hostType = {{ $hostType | toToml }}
+    # small: 
+    # medium: MacBook 1400x900
+    # large:  T480    1920x1080 
     screenResolution = {{ $screenResolution | toToml }}
 
