@@ -21,6 +21,11 @@ config.font_size = 14.0
 
 config.color_scheme = 'Builtin Dark'
 
+-- Claude Code integration
+config.keys = {
+  {key="Enter", mods="SHIFT", action=wezterm.action{SendString="\x1b\r"}},
+}
+
 -- and finally, return the configuration to wezterm
 return config
 
