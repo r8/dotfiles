@@ -40,6 +40,7 @@ local act = wezterm.action
 config.keys = {
   -- Claude Code integration
   { key = 'Enter', mods = 'SHIFT', action = act{ SendString = "\x1b\r" } },
+  -- Tabs
   { key = '{', mods = 'SHIFT|ALT', action = act.MoveTabRelative(-1) },
   { key = '}', mods = 'SHIFT|ALT', action = act.MoveTabRelative(1) },
 }
