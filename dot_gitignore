@@ -1,3 +1,13 @@
+# Idea
 *.iml
 .idea
+
+# Mise
 mise.local.toml
+
+# DDEV
+.ddev
+
+# Claude Code
+.claude
+
