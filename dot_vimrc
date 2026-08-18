@@ -5,6 +5,8 @@ call plug#begin()
   Plug 'liuchengxu/vim-which-key'
   Plug 'mhinz/vim-startify'
 
+  Plug 'easymotion/vim-easymotion'
+
   Plug 'preservim/nerdtree' |
 				\ Plug 'Xuyuanp/nerdtree-git-plugin'
   Plug 'jeetsukumaran/vim-buffergator'
