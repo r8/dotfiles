@@ -17,6 +17,7 @@ call plug#begin()
   Plug 'jiangmiao/auto-pairs'
   Plug 'farmergreg/vim-lastplace'
   Plug 'sheerun/vim-polyglot'
+  Plug 'bakpakin/janet.vim'
 call plug#end()
 
 " Use Vim settings instead of Vi
